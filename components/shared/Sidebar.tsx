@@ -13,8 +13,8 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <div className="flex size-full flex-col gap-4">
-        <Link href="/" className="sidebar-logo">
-          <Image src="/assets/images/logo-text.svg" alt="logo" width={180} height={28} />
+        <Link href="/" className="sidebar-logo px-4">
+          <Image src="/assets/images/vs.png" alt="logo" width={180} height={28} />
         </Link>
 
         <nav className="sidebar-nav">
@@ -25,7 +25,7 @@ const Sidebar = () => {
 
                 return (
                   <li key={link.route} className={`sidebar-nav_element group ${
-                    isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
+                    isActive ? 'bg-emerald-500 text-white' : 'text-gray-700'
                   }`}>
                     <Link className="sidebar-link" href={link.route}>
                       <Image 
@@ -49,7 +49,7 @@ const Sidebar = () => {
 
                 return (
                   <li key={link.route} className={`sidebar-nav_element group ${
-                    isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
+                    isActive ? 'bg-emerald-500 text-white ' : 'text-gray-700'
                   }`}>
                     <Link className="sidebar-link" href={link.route}>
                       <Image 
@@ -66,7 +66,7 @@ const Sidebar = () => {
               })}
 
               <li className="flex-center cursor-pointer gap-2 p-4">
-                <UserButton afterSignOutUrl='/' showName />
+                <UserButton afterSignOutUrl='/' showName  />
               </li>
             </ul>
           </SignedIn>

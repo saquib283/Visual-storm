@@ -23,9 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider appearance={{
-      variables: { colorPrimary: '#624cf5' }
+      variables: { colorPrimary: '#ff6666' }
+
+      // #624cf5
     }}>
       <html lang="en">
+      <link rel="icon" href="/assets/images/lbolt.png" type="image/png" sizes="32x32" />
         <body className={cn("font-IBMPlex antialiased", IBMPlex.variable)}>
           {children}
         </body>
