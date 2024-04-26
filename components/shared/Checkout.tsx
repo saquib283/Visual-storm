@@ -66,7 +66,7 @@ const Checkout = ({
           role="link"
           className="w-full rounded-full bg-emerald-500 bg-cover"
         >
-          Buy Credit
+          Purchase
         </Button>
       </section>
     </form>

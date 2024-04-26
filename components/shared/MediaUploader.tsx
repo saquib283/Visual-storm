@@ -69,7 +69,7 @@ const MediaUploader = ({
 
           {publicId ? (
             <>
-              <div className="cursor-pointer overflow-hidden rounded-[10px]">
+              <div className="cursor-pointer overflow-hidden rounded-[10px] shadow-xl shadow-gray-500">
                 <CldImage 
                   width={getImageSize(type, image, "width")}
                   height={getImageSize(type, image, "height")}
